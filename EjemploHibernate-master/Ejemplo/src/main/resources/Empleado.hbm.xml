@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.soria.Ejemplo.Modelo.Empleado" table="empleado">
+		<id name="id" type="int" column="id">
+			<!-- <generator class="identity"/>  -->
+		</id>
+		<property name="nombre" type="string" column="nombre"/>
+		<property name="apellido" type="string" column="apellido"/>
+	</class>
+</hibernate-mapping>
+
+<!-- 
+Tipo mapero	Tipo Java		Tipo SQL
+=================================
+integer		int				INTEGER
+long		long			BIGINT
+short		short			SMALLINT
+float		float			FLOAT
+double		double			DOUBLE
+big_decimal	BigDecimal		NUMERIC
+byte		byte			TINYINT
+
+character	String			CHAR(1)
+string 		String			VARCHAR
+
+boolean		Boolean			BIT
+yes/no		boolean			CHAR(1) // Y, N
+true/false	boolean			CHAR(1) // T, F
+
+date		Date			DATE
+time		Date			TIME
+timestamp	Date/Timestamp	TIMESTAMP
+calendar	Calendar		TIMESTAMP
+
+ -->
